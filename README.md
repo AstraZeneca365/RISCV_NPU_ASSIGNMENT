@@ -9,6 +9,8 @@ The arbiter accepts four request inputs (`req[3:0]`) and generates four grant ou
 
 A priority register(2 bits) determines which requester is checked first. After each grant, priority moves to the next requester in cyclic order, ensuring fair access.
 
+In this code, the default priority (highest priority)  is set to r0 (req[0]).
+
 ## Test cases
 1. Request r0 only
 2. Request r1 only
