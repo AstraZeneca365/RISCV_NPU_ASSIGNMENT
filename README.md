@@ -7,7 +7,7 @@ An arbiter is a circuit used when multiple devices request access to a shared re
 
 The arbiter accepts four request inputs (`req[3:0]`) and generates four grant outputs (`gnt[3:0]`). Only one requester is granted at a time.
 
-A priority register(2 bits) determines which requester is checked first. After each grant, priority moves to the next requester in cyclic order, ensuring fair access.
+A priority register(2 bits) determines which requester is checked first. After each grant, priority moves to the next requester in cyclic order which ensures fair access to every requester.
 
 In this code, the default priority (highest priority)  is set to r0 (req[0]).
 
