@@ -2,7 +2,8 @@
 
 # 1)4-input round robin arbiter
 
-what is an arbiter? - An arbiter is a circuit used when multiple devices request access to a shared resource at the same time. Since only one requester can be granted access at a time, the arbiter decides which request should be served. In a fixed priority arbiter, one requester may continuously get preference over others. A round robin arbiter avoids this by changing the priority after every grant.
+##what is an arbiter?
+An arbiter is a circuit used when multiple devices request access to a shared resource at the same time. Since only one requester can be granted access at a time, the arbiter decides which request should be served. In a fixed priority arbiter, one requester may continuously get preference over others. A round robin arbiter avoids this by changing the priority after every grant.
 
 The arbiter accepts four request inputs (`req[3:0]`) and generates four grant outputs (`gnt[3:0]`). Only one requester is granted at a time.
 
